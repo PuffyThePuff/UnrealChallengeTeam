@@ -19,6 +19,7 @@ class AUnrealChallengeTeamCharacter : public ACharacter
 {
 	GENERATED_BODY()
 
+protected:
 	/** Pawn mesh: 1st person view (arms; seen only by self) */
 	UPROPERTY(VisibleDefaultsOnly, Category=Mesh)
 	USkeletalMeshComponent* Mesh1P;
@@ -89,7 +90,7 @@ public:
 protected:
 	
 	/** Fires a projectile. */
-	void OnFire();
+	virtual void OnFire();
 
 	/** Resets HMD orientation and position in VR. */
 	void OnResetVR();

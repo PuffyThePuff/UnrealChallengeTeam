@@ -38,6 +38,6 @@ void AUnrealChallengeTeamProjectile::OnHit(UPrimitiveComponent* HitComp, AActor*
 	{
 		OtherComp->AddImpulseAtLocation(GetVelocity() * 100.0f, GetActorLocation());
 
-		Destroy();
+		// Destroy();
 	}
 }
