@@ -56,8 +56,3 @@ void UProjectileUpgradeBehavior::SpawnUpgrade()
 		break;
 	}
 }
-
-void UProjectileUpgradeBehavior::ConfirmTemplates()
-{
-	UE_LOG(LogTemp, Display, TEXT("Template confirmed."));
-}

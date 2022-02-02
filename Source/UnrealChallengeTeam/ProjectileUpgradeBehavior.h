@@ -21,7 +21,6 @@ protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
 	UFUNCTION(BlueprintCallable) void SpawnUpgrade();
-	UFUNCTION(BlueprintCallable) void ConfirmTemplates();
 
 	UPROPERTY(EditAnywhere) AActor* upgradeItem1;
 	UPROPERTY(EditAnywhere) AActor* upgradeItem2;
