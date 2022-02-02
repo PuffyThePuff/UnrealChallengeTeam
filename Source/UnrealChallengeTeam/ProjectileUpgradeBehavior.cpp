@@ -18,9 +18,6 @@ UProjectileUpgradeBehavior::UProjectileUpgradeBehavior()
 void UProjectileUpgradeBehavior::BeginPlay()
 {
 	Super::BeginPlay();
-
-	// ...
-	
 }
 
 
@@ -29,5 +26,5 @@ void UProjectileUpgradeBehavior::TickComponent(float DeltaTime, ELevelTick TickT
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
-	// ...
+	
 }

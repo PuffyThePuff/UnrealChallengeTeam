@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "UnrealChallengeTeamCharacter.h"
+#include"UnrealChallengeTeamProjectile.h"
 #include "UpgradableCharacter.generated.h"
 
 /**
@@ -15,8 +16,10 @@ class UNREALCHALLENGETEAM_API AUpgradableCharacter : public AUnrealChallengeTeam
 	GENERATED_BODY()
 
 protected:
-	int projectileType = 0;
+	UPROPERTY(VisibleAnywhere) int projectileType = 0;
+
+	virtual void OnFire() override;
 
 public:
-	void SetProjectileType(int newType);
+	UFUNCTION(BlueprintCallable) void SetProjectileType(int newType);
 };
