@@ -13,8 +13,8 @@ void AUpgradableCharacter::OnFire() {
 	float massMultiplier = 1.f;
 
 	switch (projectileType) {
-	case 1: scaleFactors *= 4.f; massMultiplier *= 1.f; break;
-	case 2: scaleFactors *= 0.25f; massMultiplier *= 1.f; break;
+	case 1: scaleFactors *= 0.25f; massMultiplier *= 1.f; break;
+	case 2: scaleFactors *= 8.f; massMultiplier *= 1.f; break;
 	default: scaleFactors *= 1.f; massMultiplier *= 1.f;
 	}
 
