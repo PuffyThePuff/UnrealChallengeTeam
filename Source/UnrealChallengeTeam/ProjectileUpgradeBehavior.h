@@ -20,9 +20,10 @@ public:
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
-	UPROPERTY(BlueprintReadWrite) AUpgradableCharacter* playerCharacter;
+	UFUNCTION(BlueprintCallable) void SpawnUpgrade();
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite) int upgradeType;
+	UPROPERTY(BlueprintReadWrite) AActor* upgradeItem1;
+	UPROPERTY(BlueprintReadWrite) AActor* upgradeItem2;
 
 public:	
 	// Called every frame

@@ -25,6 +25,15 @@ void UProjectileUpgradeBehavior::BeginPlay()
 void UProjectileUpgradeBehavior::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
+}
 
-	
+void UProjectileUpgradeBehavior::SpawnUpgrade()
+{
+	int itemToSpawn = (int) FMath::FRandRange(0.f, 3.f);
+	switch (itemToSpawn) {
+	case 0:
+		break;
+	case 1:
+		break;
+	}
 }
